@@ -1,18 +1,18 @@
 spin_manifest_version = 2
 
 [application]
-name = "foo"
+name = "spinbuilder-example-rust"
 version = "0.1.0"
 authors = ["Matthew Fisher <matt.fisher@fermyon.com>"]
 description = ""
 
 [[trigger.http]]
 route = "/..."
-component = "foo"
+component = "app"
 
-[component.foo]
-source = "target/wasm32-wasip1/release/foo.wasm"
+[component.app]
+source = "target/wasm32-wasip1/release/spinbuilder_example_rust.wasm"
 allowed_outbound_hosts = []
-[component.foo.build]
+[component.app.build]
 command = "cargo build --target wasm32-wasip1 --release"
 watch = ["src/**/*.rs", "Cargo.toml"]

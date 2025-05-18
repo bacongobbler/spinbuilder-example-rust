@@ -106,14 +106,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
 
 [[package]]
-name = "foo"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "spin-sdk",
-]
-
-[[package]]
 name = "form_urlencoded"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -524,6 +516,14 @@ dependencies = [
  "spin-macro",
  "thiserror",
  "wit-bindgen",
+]
+
+[[package]]
+name = "spinbuilder-example-rust"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "spin-sdk",
 ]
 
 [[package]]

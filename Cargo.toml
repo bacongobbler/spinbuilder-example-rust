@@ -1,5 +1,5 @@
 [package]
-name = "foo"
+name = "spinbuilder-example-rust"
 authors = ["Matthew Fisher <matt.fisher@fermyon.com>"]
 description = ""
 version = "0.1.0"
